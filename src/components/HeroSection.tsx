@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, Linkedin, Github, MessageCircle } from "lucide-react";
+import { Mail, Phone, Link, Code, MessageCircle } from "lucide-react";
 
 const HeroSection = () => {
   return (
