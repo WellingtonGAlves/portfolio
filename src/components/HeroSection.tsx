@@ -47,11 +47,11 @@ const HeroSection = () => {
             <span className="text-sm text-secondary-foreground group-hover:text-foreground transition-colors">(41) 9 9582-9776</span>
           </a>
           <a href="https://www.linkedin.com/in/wellington-alves-9a337b15a" target="_blank" rel="noopener noreferrer" className="glass rounded-lg px-5 py-3 flex items-center gap-2 hover:border-primary/50 transition-colors group">
-            <Linkedin className="w-4 h-4 text-primary" />
+            <Link className="w-4 h-4 text-primary" />
             <span className="text-sm text-secondary-foreground group-hover:text-foreground transition-colors">LinkedIn</span>
           </a>
           <a href="https://github.com/WellingtonGAlves" target="_blank" rel="noopener noreferrer" className="glass rounded-lg px-5 py-3 flex items-center gap-2 hover:border-primary/50 transition-colors group">
-            <Github className="w-4 h-4 text-primary" />
+            <Code className="w-4 h-4 text-primary" />
             <span className="text-sm text-secondary-foreground group-hover:text-foreground transition-colors">GitHub</span>
           </a>
         </motion.div>

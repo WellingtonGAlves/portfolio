@@ -68,7 +68,7 @@ const ContactSection = () => {
             rel="noopener noreferrer"
             className="glass rounded-xl p-5 hover:border-primary/50 transition-all group flex items-center gap-3"
           >
-            <Linkedin className="w-6 h-6 text-primary" />
+            <Link className="w-6 h-6 text-primary" />
             <div className="text-left">
               <p className="font-mono text-sm font-semibold text-foreground">LinkedIn</p>
               <p className="text-xs text-muted-foreground">Wellington Alves</p>
@@ -81,7 +81,7 @@ const ContactSection = () => {
             rel="noopener noreferrer"
             className="glass rounded-xl p-5 hover:border-primary/50 transition-all group flex items-center gap-3"
           >
-            <Github className="w-6 h-6 text-primary" />
+            <Code className="w-6 h-6 text-primary" />
             <div className="text-left">
               <p className="font-mono text-sm font-semibold text-foreground">GitHub</p>
               <p className="text-xs text-muted-foreground">WellingtonGAlves</p>
