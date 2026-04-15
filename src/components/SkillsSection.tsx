@@ -12,7 +12,7 @@ const categories: SkillCategory[] = [
   { name: "Integrações", skills: ["API RESTful", "JSON", "XML", "NuSOAP", "Webhook", "WebSocket"] },
   { name: "DevOps & Ferramentas", skills: ["Git", "Linux", "Docker", "Composer", "NPM", "SSL"] },
   { name: "Marketing Digital", skills: ["Google Ads", "Facebook Ads", "Google Analytics", "Tag Manager", "SEO", "Pixel"] },
-  { name: "Cloud", skills: ["Google Cloud Run", "Google Cloud TTS", "Google Sheets API", "AppScript"] },
+  { name: "Cloud & Infraestrutura", skills: ["AWS (VPS)", "Google Cloud Run", "Google Cloud TTS", "Google Cloud (VPS)", "Hostinger (VPS)", "Google Sheets API", "AppScript"] },
 ];
 
 const SkillsSection = () => {
