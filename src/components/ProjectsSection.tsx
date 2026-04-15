@@ -130,39 +130,40 @@ const ProjectsSection = () => {
               transition={{ delay: index * 0.08 }}
               className="glass rounded-xl p-6 hover:border-primary/30 transition-all duration-300 group"
             >
-              <div className="flex items-start justify-between mb-3">
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className={`text-xs font-mono px-2 py-0.5 rounded-full border ${typeColors[project.type]}`}>
-                      {project.type}
-                    </span>
-                  </div>
-                  <h3 className="font-mono font-bold text-foreground text-lg group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
-                </div>
-                {project.url && (
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs font-mono px-3 py-1.5 rounded-lg border border-primary/30 text-primary hover:bg-primary/10 transition-all">
-                    {project.url.includes("play.google.com") ? (
-                      <><PlayStoreIcon className="w-4 h-4" /> Google Play</>
-                    ) : (
-                      <><Globe className="w-3.5 h-3.5" /> Visitar</>
-                    )}
-                  </a>
-                )}
-                {project.url2 && (
-                  <a href={project.url2} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs font-mono px-3 py-1.5 rounded-lg border border-primary/30 text-primary hover:bg-primary/10 transition-all">
-                    <AppleIcon className="w-4 h-4" /> App Store
-                  </a>
-                )}
+              <div className="flex items-center gap-2 mb-2">
+                <span className={`text-xs font-mono px-2 py-0.5 rounded-full border ${typeColors[project.type]}`}>
+                  {project.type}
+                </span>
               </div>
+              <h3 className="font-mono font-bold text-foreground text-lg group-hover:text-primary transition-colors mb-2">
+                {project.title}
+              </h3>
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">{project.description}</p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech) => (
                   <span key={tech} className="text-xs font-mono px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground border border-border">
                     {tech}
                   </span>
                 ))}
+              </div>
+              {(project.url || project.url2) && (
+                <div className="flex flex-wrap gap-2 pt-3 border-t border-border/50">
+                  {project.url && (
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-xs font-mono px-4 py-2 rounded-lg border border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 transition-all">
+                      {project.url.includes("play.google.com") ? (
+                        <><PlayStoreIcon className="w-4 h-4" /> Google Play</>
+                      ) : (
+                        <><Globe className="w-3.5 h-3.5" /> Visitar site</>
+                      )}
+                    </a>
+                  )}
+                  {project.url2 && (
+                    <a href={project.url2} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-xs font-mono px-4 py-2 rounded-lg border border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 transition-all">
+                      <AppleIcon className="w-4 h-4" /> App Store
+                    </a>
+                  )}
+                </div>
+              )}
               </div>
             </motion.div>
           ))}
