@@ -59,6 +59,13 @@ const timeline: TimelineItem[] = [
     description: "Desenvolvimento de robô de autoatendimento via WhatsApp integrado ao site da Bolpar, pesquisando produtos 24/7 com inteligência.",
     icon: "work",
   },
+  {
+    year: "2026",
+    title: "App Mobile — Rastreamento",
+    subtitle: "BolTech Rastreadores — Ionic + Angular",
+    description: "Melhoria de layout, correção de bugs e implementação de novas funcionalidades no aplicativo mobile de rastreamento de veículos da BolTech.",
+    icon: "work",
+  },
 ];
 
 const TimelineSection = () => {
