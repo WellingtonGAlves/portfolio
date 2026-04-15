@@ -44,7 +44,7 @@ const projects: Project[] = [
   {
     title: "Site Institucional BolTech",
     description: "Site institucional da BolTech Rastreadores, apresentando serviços de rastreamento e monitoramento veicular.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["WordPress", "Elementor"],
     url: "https://boltech.com.br",
     type: "profissional",
   },
