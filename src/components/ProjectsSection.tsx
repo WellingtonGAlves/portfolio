@@ -6,6 +6,8 @@ interface Project {
   description: string;
   technologies: string[];
   url?: string;
+  url2?: string;
+  url2Label?: string;
   type: "profissional" | "pessoal" | "automação";
 }
 
@@ -22,6 +24,8 @@ const projects: Project[] = [
     description: "Melhoria de layout, correção de bugs e implementação de novas funcionalidades no aplicativo mobile de rastreamento de veículos.",
     technologies: ["Ionic", "Angular", "TypeScript"],
     url: "https://play.google.com/store/apps/details?id=io.ionic.boltechrastreadores",
+    url2: "https://apps.apple.com/br/app/boltech-rastreadores-v2/id6504941062?platform=iphone",
+    url2Label: "App Store",
     type: "profissional",
   },
   {
@@ -125,9 +129,16 @@ const ProjectsSection = () => {
                   </h3>
                 </div>
                 {project.url && (
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors ml-2 mt-1">
-                    <Globe className="w-5 h-5" />
-                  </a>
+                  <div className="flex items-center gap-1 ml-2 mt-1">
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                      <Globe className="w-5 h-5" />
+                    </a>
+                    {project.url2 && (
+                      <a href={project.url2} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    )}
+                  </div>
                 )}
               </div>
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">{project.description}</p>
