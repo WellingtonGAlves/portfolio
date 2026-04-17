@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Wellington G. Alves | Desenvolvedor Full Stack Freelancer</title>
+  <desc id="desc">Capa de compartilhamento do portfolio com nome, especialidade e principais tecnologias.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="55%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="1020" cy="120" r="220" fill="#38bdf8" opacity="0.12" />
+  <circle cx="920" cy="520" r="260" fill="#22c55e" opacity="0.08" />
+  <rect x="72" y="72" width="1056" height="486" rx="28" fill="#0f172a" stroke="#334155" />
+
+  <rect x="110" y="116" width="120" height="120" rx="28" fill="#111827" stroke="#38bdf8" />
+  <text x="170" y="192" text-anchor="middle" font-size="52" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="url(#accent)">WG</text>
+
+  <text x="110" y="310" font-size="64" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#f8fafc">
+    Wellington G. Alves
+  </text>
+  <text x="110" y="368" font-size="30" font-family="Segoe UI, Arial, sans-serif" fill="#38bdf8">
+    Desenvolvedor Full Stack Freelancer
+  </text>
+  <text x="110" y="424" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#cbd5e1">
+    Sistemas web, automacoes, APIs e solucoes sob medida para negocios.
+  </text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600">
+    <rect x="110" y="472" width="118" height="46" rx="23" fill="#0b1220" stroke="#1d4ed8" />
+    <text x="169" y="502" text-anchor="middle" fill="#dbeafe">Laravel</text>
+
+    <rect x="246" y="472" width="118" height="46" rx="23" fill="#0b1220" stroke="#0ea5e9" />
+    <text x="305" y="502" text-anchor="middle" fill="#e0f2fe">Node.js</text>
+
+    <rect x="382" y="472" width="126" height="46" rx="23" fill="#0b1220" stroke="#22c55e" />
+    <text x="445" y="502" text-anchor="middle" fill="#dcfce7">Angular</text>
+
+    <rect x="526" y="472" width="164" height="46" rx="23" fill="#0b1220" stroke="#f59e0b" />
+    <text x="608" y="502" text-anchor="middle" fill="#fef3c7">PostgreSQL</text>
+  </g>
+
+  <text x="110" y="548" font-size="22" font-family="Segoe UI, Arial, sans-serif" fill="#94a3b8">
+    wellingtongalves.github.io
+  </text>
+</svg>
