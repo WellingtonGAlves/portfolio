@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { Mail, MessageCircle, Link, Code, ArrowRight } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 const ContactSection = () => {
+  const { t } = useLanguage();
   return (
     <section className="py-24 px-4" id="contato">
       <div className="max-w-3xl mx-auto text-center">
@@ -11,7 +13,7 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-mono font-bold mb-4 text-gradient"
         >
-          Vamos Trabalhar Juntos?
+          {t.contact.title}
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -19,7 +21,7 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="text-muted-foreground mb-4 max-w-xl mx-auto leading-relaxed"
         >
-          Estou disponível para projetos freelancer — desde um sistema completo até automações pontuais.
+          {t.contact.lead}
         </motion.p>
         <motion.p
           initial={{ opacity: 0 }}
@@ -28,7 +30,7 @@ const ContactSection = () => {
           transition={{ delay: 0.1 }}
           className="text-primary font-mono text-sm mb-12 glass inline-block px-6 py-3 rounded-full"
         >
-          💬 Analiso seu projeto e dou minha opinião sem compromisso!
+          {t.contact.cta}
         </motion.p>
 
         <motion.div
@@ -46,8 +48,8 @@ const ContactSection = () => {
           >
             <MessageCircle className="w-6 h-6 text-primary" />
             <div className="text-left">
-              <p className="font-mono text-sm font-semibold text-foreground">WhatsApp</p>
-              <p className="text-xs text-muted-foreground">(41) 9 9582-9776</p>
+              <p className="font-mono text-sm font-semibold text-foreground">{t.contact.whatsappLabel}</p>
+              <p className="text-xs text-muted-foreground">{t.contact.whatsappValue}</p>
             </div>
             <ArrowRight className="w-4 h-4 text-primary ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
           </a>
@@ -57,7 +59,7 @@ const ContactSection = () => {
           >
             <Mail className="w-6 h-6 text-primary" />
             <div className="text-left">
-              <p className="font-mono text-sm font-semibold text-foreground">E-mail</p>
+              <p className="font-mono text-sm font-semibold text-foreground">{t.contact.emailLabel}</p>
               <p className="text-xs text-muted-foreground">wellington_999@live.com</p>
             </div>
             <ArrowRight className="w-4 h-4 text-primary ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -70,8 +72,8 @@ const ContactSection = () => {
           >
             <Link className="w-6 h-6 text-primary" />
             <div className="text-left">
-              <p className="font-mono text-sm font-semibold text-foreground">LinkedIn</p>
-              <p className="text-xs text-muted-foreground">Wellington Alves</p>
+              <p className="font-mono text-sm font-semibold text-foreground">{t.contact.linkedinLabel}</p>
+              <p className="text-xs text-muted-foreground">{t.contact.linkedinValue}</p>
             </div>
             <ArrowRight className="w-4 h-4 text-primary ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
           </a>
@@ -83,7 +85,7 @@ const ContactSection = () => {
           >
             <Code className="w-6 h-6 text-primary" />
             <div className="text-left">
-              <p className="font-mono text-sm font-semibold text-foreground">GitHub</p>
+              <p className="font-mono text-sm font-semibold text-foreground">{t.contact.githubLabel}</p>
               <p className="text-xs text-muted-foreground">WellingtonGAlves</p>
             </div>
             <ArrowRight className="w-4 h-4 text-primary ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -97,7 +99,7 @@ const ContactSection = () => {
           transition={{ delay: 0.4 }}
           className="mt-16 text-muted-foreground text-xs font-mono"
         >
-          © {new Date().getFullYear()} Wellington G. Alves — Curitiba, PR
+          {t.contact.footer(new Date().getFullYear())}
         </motion.p>
       </div>
     </section>
