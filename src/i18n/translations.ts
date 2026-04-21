@@ -1,5 +1,178 @@
 export type Language = "en" | "pt";
 
+export type ProjectType = "professional" | "personal" | "automation";
+
+export interface ProjectItem {
+  title: string;
+  description: string;
+  technologies: string[];
+  url?: string;
+  url2?: string;
+  url2Label?: string;
+  type: ProjectType;
+}
+
+const sharedProjects = (lang: Language): ProjectItem[] => {
+  if (lang === "en") {
+    return [
+      {
+        title: "Vehicle Tracking System",
+        description:
+          "Built from scratch with a monitoring dashboard, GPS device integration and real-time notifications.",
+        technologies: ["Java", "PHP", "PostgreSQL", "Bootstrap 3", "jQuery"],
+        url: "https://rastreio.boltech.com.br/",
+        type: "professional",
+      },
+      {
+        title: "Mobile App — BolTech Trackers",
+        description:
+          "Layout improvements, bug fixes and new features for the vehicle tracking mobile app.",
+        technologies: ["Ionic", "Angular", "TypeScript"],
+        url: "https://play.google.com/store/apps/details?id=io.ionic.boltechrastreadores",
+        url2: "https://apps.apple.com/br/app/boltech-rastreadores-v2/id6504941062?platform=iphone",
+        url2Label: "App Store",
+        type: "professional",
+      },
+      {
+        title: "BolTech Institutional Website",
+        description:
+          "Institutional website for BolTech Trackers, presenting vehicle tracking and monitoring services.",
+        technologies: ["WordPress", "Elementor"],
+        url: "https://boltech.com.br",
+        type: "professional",
+      },
+      {
+        title: "Bolpar Distributor E-commerce",
+        description:
+          "Complete platform with product catalog, quote cart and authentication. ERP integration via WebService.",
+        technologies: ["PHP", "PostgreSQL", "NuSoap", "WebService"],
+        url: "https://www.bolpar.com.br/",
+        type: "professional",
+      },
+      {
+        title: "WhatsApp Bulk Messaging System",
+        description:
+          "Mass message automation with dynamic fields and support for multiple campaigns.",
+        technologies: ["PHP", "PostgreSQL", "Laravel", "Queues", "WhatsApp API"],
+        type: "professional",
+      },
+      {
+        title: "WhatsApp Self-service Bot",
+        description:
+          "Bot integrated with the Bolpar website that searches products 24/7, speeding up the sales team.",
+        technologies: ["Node.js", "WhatsApp API", "Web Integration"],
+        type: "professional",
+      },
+      {
+        title: "WhatsApp Audio Campaigns with TTS",
+        description:
+          "Non-aggressive marketing system with personalized audio, purchase history, smart broadcasts and professional voice profiles.",
+        technologies: ["PHP", "Laravel", "PostgreSQL", "Tailwind CSS", "Google Cloud TTS"],
+        type: "personal",
+      },
+      {
+        title: "Financial Control System",
+        description:
+          "Complete business financial management — income, expenses, cash flow and reports for decision making.",
+        technologies: ["PHP", "Laravel", "PostgreSQL", "Bootstrap", "jQuery"],
+        type: "personal",
+      },
+      {
+        title: "WhatsApp + Bling Order Automation",
+        description:
+          "Automatic order creation in Bling through conversational flows on WhatsApp.",
+        technologies: ["Node.js", "Google Cloud Run", "ReplyAgent", "Bling API"],
+        type: "automation",
+      },
+      {
+        title: "Sales Participation Tracking",
+        description:
+          "Automatic tracking and attribution of participation credits on sold orders from Bling.",
+        technologies: ["Node.js", "Google Cloud Run", "AppScript", "Bling API", "Google Sheets"],
+        type: "automation",
+      },
+    ];
+  }
+  return [
+    {
+      title: "Sistema de Rastreamento de Veículos",
+      description:
+        "Desenvolvido do zero com painel de monitoramento, integração com dispositivos GPS e notificações em tempo real.",
+      technologies: ["Java", "PHP", "PostgreSQL", "Bootstrap 3", "jQuery"],
+      url: "https://rastreio.boltech.com.br/",
+      type: "professional",
+    },
+    {
+      title: "App Mobile — BolTech Rastreadores",
+      description:
+        "Melhoria de layout, correção de bugs e implementação de novas funcionalidades no aplicativo mobile de rastreamento de veículos.",
+      technologies: ["Ionic", "Angular", "TypeScript"],
+      url: "https://play.google.com/store/apps/details?id=io.ionic.boltechrastreadores",
+      url2: "https://apps.apple.com/br/app/boltech-rastreadores-v2/id6504941062?platform=iphone",
+      url2Label: "App Store",
+      type: "professional",
+    },
+    {
+      title: "Site Institucional BolTech",
+      description:
+        "Site institucional da BolTech Rastreadores, apresentando serviços de rastreamento e monitoramento veicular.",
+      technologies: ["WordPress", "Elementor"],
+      url: "https://boltech.com.br",
+      type: "professional",
+    },
+    {
+      title: "E-commerce Bolpar Distribuidora",
+      description:
+        "Plataforma completa com catálogo de produtos, carrinho de cotações e autenticação. Integração com ERP via WebService.",
+      technologies: ["PHP", "PostgreSQL", "NuSoap", "WebService"],
+      url: "https://www.bolpar.com.br/",
+      type: "professional",
+    },
+    {
+      title: "Sistema de Disparo via WhatsApp",
+      description:
+        "Automatização de envios em massa com campos dinâmicos e suporte a múltiplas campanhas.",
+      technologies: ["PHP", "PostgreSQL", "Laravel", "Queues", "API WhatsApp"],
+      type: "professional",
+    },
+    {
+      title: "Robô de Autoatendimento WhatsApp",
+      description:
+        "Robô integrado ao site da Bolpar que pesquisa produtos 24/7, agilizando o atendimento para o time de vendas.",
+      technologies: ["Node.js", "WhatsApp API", "Integração Web"],
+      type: "professional",
+    },
+    {
+      title: "Campanhas de Áudio via WhatsApp com TTS",
+      description:
+        "Sistema de marketing não agressivo com áudio personalizado, histórico de compras, disparos inteligentes e perfis de voz profissionais.",
+      technologies: ["PHP", "Laravel", "PostgreSQL", "Tailwind CSS", "Google Cloud TTS"],
+      type: "personal",
+    },
+    {
+      title: "Sistema de Controle Financeiro",
+      description:
+        "Gestão financeira empresarial completa — receitas, despesas, fluxo de caixa e relatórios para tomada de decisão.",
+      technologies: ["PHP", "Laravel", "PostgreSQL", "Bootstrap", "jQuery"],
+      type: "personal",
+    },
+    {
+      title: "Automação de Pedidos via WhatsApp + Bling",
+      description:
+        "Criação automática de pedidos no Bling através de fluxos conversacionais no WhatsApp.",
+      technologies: ["Node.js", "Google Cloud Run", "ReplyAgent", "Bling API"],
+      type: "automation",
+    },
+    {
+      title: "Identificação de Participação em Vendas",
+      description:
+        "Rastreamento e atribuição automática de créditos de participação em pedidos vendidos do Bling.",
+      technologies: ["Node.js", "Google Cloud Run", "AppScript", "Bling API", "Google Sheets"],
+      type: "automation",
+    },
+  ];
+};
+
 export const translations = {
   en: {
     nav: {
@@ -12,7 +185,7 @@ export const translations = {
     hero: {
       role: "> Full Stack Developer",
       tagline:
-        "+7 years building robust web solutions — from vehicle tracking systems to intelligent WhatsApp automations.",
+        "+8 years building robust web solutions — from vehicle tracking systems to intelligent WhatsApp automations.",
       available: "🚀 Available for freelance projects",
       footerStart: "💬 I'll review your project and share my opinion ",
       footerHighlight: "with no commitment",
@@ -89,6 +262,17 @@ export const translations = {
         },
       ],
     },
+    projects: {
+      title: "Projects",
+      subtitle: "> Solutions that drive real impact",
+      typeLabels: {
+        professional: "professional",
+        personal: "personal",
+        automation: "automation",
+      },
+      visitSite: "Visit site",
+      items: sharedProjects("en"),
+    },
     skills: {
       title: "Technologies",
       subtitle: "> Full stack to deliver end to end",
@@ -126,7 +310,7 @@ export const translations = {
     hero: {
       role: "> Desenvolvedor Full Stack",
       tagline:
-        "+7 anos criando soluções web robustas — de sistemas de rastreamento a automações inteligentes com WhatsApp.",
+        "+8 anos criando soluções web robustas — de sistemas de rastreamento a automações inteligentes com WhatsApp.",
       available: "🚀 Disponível para projetos freelancer",
       footerStart: "💬 Analiso seu projeto e dou minha opinião ",
       footerHighlight: "sem compromisso",
@@ -202,6 +386,17 @@ export const translations = {
           icon: "work" as const,
         },
       ],
+    },
+    projects: {
+      title: "Projetos",
+      subtitle: "> Soluções que geram impacto real",
+      typeLabels: {
+        professional: "profissional",
+        personal: "pessoal",
+        automation: "automação",
+      },
+      visitSite: "Visitar site",
+      items: sharedProjects("pt"),
     },
     skills: {
       title: "Tecnologias",
