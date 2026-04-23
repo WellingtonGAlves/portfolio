@@ -1,17 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
-  <title id="title">WG favicon</title>
-  <desc id="desc">Monograma WG em fundo escuro com destaque em azul.</desc>
+  <title id="title">WGA monogram</title>
+  <desc id="desc">Wellington G. Alves initials WGA on a dark rounded square.</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1e293b" />
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#22c55e" />
+    <linearGradient id="txt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#a78bfa" />
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="16" fill="url(#bg)" />
-  <path d="M12 18h8l6 20 6-20h8l-10 28h-8L12 18z" fill="url(#accent)" />
-  <path d="M50 19c-6 0-10 4-10 9v8c0 5 4 9 10 9 2 0 4-1 6-2v-8h-6v4c0 1-1 2-2 2s-2-1-2-2v-12c0-1 1-2 2-2s2 1 2 2v1h6v-2c0-5-4-9-6-9z" fill="#e2e8f0" />
+  <rect width="64" height="64" rx="14" fill="url(#bg)" />
+  <text x="50%" y="52%"
+        text-anchor="middle"
+        dominant-baseline="central"
+        font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace"
+        font-weight="800"
+        font-size="22"
+        fill="url(#txt)"
+        letter-spacing="-1">WGA</text>
 </svg>
