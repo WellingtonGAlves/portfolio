@@ -91,6 +91,13 @@ const sharedProjects = (lang: Language): ProjectItem[] => {
         technologies: ["Node.js", "Google Cloud Run", "AppScript", "Bling API", "Google Sheets"],
         type: "automation",
       },
+      {
+        title: "Geocoding Microservice (GPS → Address)",
+        description:
+          "Node.js microservice that converts GPS coordinates into addresses using Google Geocoding API, Photon and Nominatim as free fallbacks. Built-in cache to avoid repeated lookups and BullMQ queue support for high-volume processing. Integrated with the vehicle tracking system. (April/2026)",
+        technologies: ["Node.js", "BullMQ", "Redis", "Google Geocoding API", "Photon", "Nominatim", "Cache"],
+        type: "automation",
+      },
     ];
   }
   return [
@@ -168,6 +175,13 @@ const sharedProjects = (lang: Language): ProjectItem[] => {
       description:
         "Rastreamento e atribuição automática de créditos de participação em pedidos vendidos do Bling.",
       technologies: ["Node.js", "Google Cloud Run", "AppScript", "Bling API", "Google Sheets"],
+      type: "automation",
+    },
+    {
+      title: "Microsserviço de Geocoding (GPS → Endereço)",
+      description:
+        "Microsserviço em Node.js que converte coordenadas GPS em endereços usando Google Geocoding API, Photon e Nominatim como fallbacks gratuitos. Cache integrado para evitar consultas repetidas e suporte a fila BullMQ para alto volume. Integrado ao sistema de rastreamento de veículos. (abril/2026)",
+      technologies: ["Node.js", "BullMQ", "Redis", "Google Geocoding API", "Photon", "Nominatim", "Cache"],
       type: "automation",
     },
   ];
@@ -258,6 +272,14 @@ export const translations = {
           subtitle: "BolTech Trackers — Ionic + Angular",
           description:
             "Layout improvements, bug fixes and new features for BolTech's vehicle tracking mobile app.",
+          icon: "work" as const,
+        },
+        {
+          year: "Apr/2026",
+          title: "Geocoding Microservice",
+          subtitle: "Node.js + BullMQ + Redis",
+          description:
+            "Built a microservice to convert GPS coordinates into addresses with Google Geocoding, Photon and Nominatim, integrated cache and queue support — plugged into the vehicle tracking system.",
           icon: "work" as const,
         },
       ],
@@ -383,6 +405,14 @@ export const translations = {
           subtitle: "BolTech Rastreadores — Ionic + Angular",
           description:
             "Melhoria de layout, correção de bugs e implementação de novas funcionalidades no aplicativo mobile de rastreamento de veículos da BolTech.",
+          icon: "work" as const,
+        },
+        {
+          year: "abr/2026",
+          title: "Microsserviço de Geocoding",
+          subtitle: "Node.js + BullMQ + Redis",
+          description:
+            "Criação de microsserviço para converter coordenadas GPS em endereços usando Google Geocoding, Photon e Nominatim, com cache integrado e suporte a fila — acoplado ao sistema de rastreamento de veículos.",
           icon: "work" as const,
         },
       ],

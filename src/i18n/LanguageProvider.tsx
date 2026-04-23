@@ -15,8 +15,22 @@ const STORAGE_KEY = "wga_language";
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguageState] = useState<Language>(() => {
     if (typeof window === "undefined") return "en";
+    // 1) URL param has highest priority (e.g. ?lang=pt or ?lang=en)
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const urlLang = params.get("lang");
+      if (urlLang === "pt" || urlLang === "en") {
+        window.localStorage.setItem(STORAGE_KEY, urlLang);
+        return urlLang;
+      }
+    } catch {
+      /* ignore */
+    }
+    // 2) Persisted preference
     const stored = window.localStorage.getItem(STORAGE_KEY);
-    return stored === "pt" || stored === "en" ? stored : "en";
+    if (stored === "pt" || stored === "en") return stored;
+    // 3) Default: English
+    return "en";
   });
 
   useEffect(() => {
