@@ -196,6 +196,21 @@ export const translations = {
       contact: "Contact",
     },
     languageToggle: "Switch to Portuguese",
+    summary: {
+      title: "Summary",
+      subtitle: "> Quick overview",
+      paragraphs: [
+        "Full Stack Developer with 8+ years of experience building robust web solutions — from vehicle tracking systems and e-commerce platforms to intelligent WhatsApp automations and AI-driven self-service bots.",
+        "Comfortable across the entire stack: PHP/Laravel, Node.js, Java and TypeScript on the backend; Angular, Ionic and modern CSS on the frontend; PostgreSQL, MySQL and Redis on data; plus integrations via REST, Webhooks, WebSockets and queue systems like BullMQ.",
+        "Currently focused on smart automations, geocoding microservices and mobile experiences — always shipping solutions that drive real, measurable impact.",
+      ],
+      highlights: [
+        { label: "Years", value: "8+" },
+        { label: "Projects shipped", value: "11+" },
+        { label: "Main stack", value: "Full Stack" },
+        { label: "Based in", value: "Curitiba, BR" },
+      ],
+    },
     hero: {
       role: "> Full Stack Developer",
       tagline:
