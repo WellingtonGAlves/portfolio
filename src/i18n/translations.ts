@@ -196,6 +196,21 @@ export const translations = {
       contact: "Contact",
     },
     languageToggle: "Switch to Portuguese",
+    summary: {
+      title: "Summary",
+      subtitle: "> Quick overview",
+      paragraphs: [
+        "Full Stack Developer with 8+ years of experience building robust web solutions — from vehicle tracking systems and e-commerce platforms to intelligent WhatsApp automations and AI-driven self-service bots.",
+        "Comfortable across the entire stack: PHP/Laravel, Node.js, Java and TypeScript on the backend; Angular, Ionic and modern CSS on the frontend; PostgreSQL, MySQL and Redis on data; plus integrations via REST, Webhooks, WebSockets and queue systems like BullMQ.",
+        "Currently focused on smart automations, geocoding microservices and mobile experiences — always shipping solutions that drive real, measurable impact.",
+      ],
+      highlights: [
+        { label: "Years", value: "8+" },
+        { label: "Projects shipped", value: "11+" },
+        { label: "Main stack", value: "Full Stack" },
+        { label: "Based in", value: "Curitiba, BR" },
+      ],
+    },
     hero: {
       role: "> Full Stack Developer",
       tagline:
@@ -329,6 +344,21 @@ export const translations = {
       contact: "Contato",
     },
     languageToggle: "Mudar para inglês",
+    summary: {
+      title: "Resumo",
+      subtitle: "> Visão geral rápida",
+      paragraphs: [
+        "Desenvolvedor Full Stack com mais de 8 anos de experiência criando soluções web robustas — de sistemas de rastreamento de veículos e plataformas de e-commerce a automações inteligentes no WhatsApp e robôs de autoatendimento com IA.",
+        "Confortável em toda a stack: PHP/Laravel, Node.js, Java e TypeScript no backend; Angular, Ionic e CSS moderno no frontend; PostgreSQL, MySQL e Redis em dados; além de integrações via REST, Webhooks, WebSockets e filas como BullMQ.",
+        "Atualmente focado em automações inteligentes, microsserviços de geocoding e experiências mobile — sempre entregando soluções com impacto real e mensurável.",
+      ],
+      highlights: [
+        { label: "Anos", value: "8+" },
+        { label: "Projetos entregues", value: "11+" },
+        { label: "Stack principal", value: "Full Stack" },
+        { label: "Baseado em", value: "Curitiba, BR" },
+      ],
+    },
     hero: {
       role: "> Desenvolvedor Full Stack",
       tagline:
